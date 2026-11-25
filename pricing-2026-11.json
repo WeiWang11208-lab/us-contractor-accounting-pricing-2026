@@ -1,0 +1,501 @@
+{
+  "schemaVersion": "1.0.0",
+  "verifiedAt": "2026-11-25",
+  "currency": "USD",
+  "market": "US",
+  "source": "https://tradecosthq.com/",
+  "methodologyUrl": "https://tradecosthq.com/methodology/",
+  "notes": "Regular US list prices (excluding temporary 90-day intro promotions, state taxes, and custom enterprise deals).",
+  "payrollModels": {
+    "quickbooksWorkforceCore": {
+      "baseMonthlyUsd": 50,
+      "perEmployeeMonthlyUsd": 7
+    },
+    "xeroPayrollGusto": {
+      "baseMonthlyUsd": 36,
+      "perEmployeeMonthlyUsd": 6
+    },
+    "freshbooksPayrollGusto": {
+      "baseMonthlyUsd": 40,
+      "perEmployeeMonthlyUsd": 6
+    },
+    "zohoPayrollUsStandard": {
+      "monthlyBaseUsd": 39,
+      "monthlyPerEmployeeUsd": 6,
+      "annualBaseUsd": 29,
+      "annualPerEmployeeUsd": 5
+    },
+    "wavePayroll": {
+      "baseMonthlyUsd": 40,
+      "perEmployeeMonthlyUsd": 6
+    },
+    "standaloneGustoSimple": {
+      "baseMonthlyUsd": 49,
+      "perEmployeeMonthlyUsd": 6
+    }
+  },
+  "vendors": [
+    {
+      "id": "quickbooks-online",
+      "name": "QuickBooks Online",
+      "category": "accounting",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://quickbooks.intuit.com/pricing/",
+      "hasAnnualDiscount": false,
+      "billingNote": "Standard US monthly list rates following the August 2026 Intuit price increase (short-term 3-month intro promos excluded).",
+      "cpaGrade": "A+",
+      "cpaSeatsLabel": "2 free CPA seats (3 on Advanced)",
+      "payrollModelLabel": "QuickBooks Workforce Payroll Core: $50/mo base + $7/employee/mo.",
+      "plans": [
+        {
+          "id": "qbo-simple-start",
+          "name": "Simple Start",
+          "monthlyUsd": 38,
+          "annualMonthlyUsd": 38,
+          "annualExactUsd": 456,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "1 user + 2 CPA seats. No bill management or Job Costing."
+        },
+        {
+          "id": "qbo-essentials",
+          "name": "Essentials",
+          "monthlyUsd": 85,
+          "annualMonthlyUsd": 85,
+          "annualExactUsd": 1020,
+          "includedUsers": 3,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 3 users + 2 CPA seats. Adds bills & time tracking, still no Job Costing."
+        },
+        {
+          "id": "qbo-plus",
+          "name": "Plus",
+          "monthlyUsd": 140,
+          "annualMonthlyUsd": 140,
+          "annualExactUsd": 1680,
+          "includedUsers": 5,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 5 users + 2 CPA seats. Minimum QBO tier for Project Profitability / Job Costing."
+        },
+        {
+          "id": "qbo-advanced",
+          "name": "Advanced",
+          "monthlyUsd": 340,
+          "annualMonthlyUsd": 340,
+          "annualExactUsd": 4080,
+          "includedUsers": 25,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 25 users + 3 CPA seats. Required for any team with 6+ office/field seats."
+        }
+      ]
+    },
+    {
+      "id": "xero",
+      "name": "Xero",
+      "category": "accounting",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://www.xero.com/us/pricing-plans/",
+      "hasAnnualDiscount": false,
+      "billingNote": "Standard US monthly list rates (Early $27, Growing $59, Established $97). No permanent annual list discount.",
+      "cpaGrade": "A",
+      "cpaSeatsLabel": "Unlimited free CPA & team seats",
+      "payrollModelLabel": "Xero Payroll (powered by Gusto): $36/mo base + $6/person/mo.",
+      "plans": [
+        {
+          "id": "xero-early",
+          "name": "Early",
+          "monthlyUsd": 27,
+          "annualMonthlyUsd": 27,
+          "annualExactUsd": 324,
+          "includedUsers": "unlimited",
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": false,
+          "includesFieldDispatch": false,
+          "notes": "Unlimited users, but capped at 20 invoices and 5 bills per month."
+        },
+        {
+          "id": "xero-growing",
+          "name": "Growing",
+          "monthlyUsd": 59,
+          "annualMonthlyUsd": 59,
+          "annualExactUsd": 708,
+          "includedUsers": "unlimited",
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Unlimited users, invoices, and bills. Ideal lean ledger paired with Jobber."
+        },
+        {
+          "id": "xero-established",
+          "name": "Established",
+          "monthlyUsd": 97,
+          "annualMonthlyUsd": 97,
+          "annualExactUsd": 1164,
+          "includedUsers": "unlimited",
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Unlimited users + Xero Projects (Job Costing), expense claims, and multi-currency."
+        }
+      ]
+    },
+    {
+      "id": "freshbooks",
+      "name": "FreshBooks",
+      "category": "accounting",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://www.freshbooks.com/pricing",
+      "hasAnnualDiscount": true,
+      "billingNote": "Approx. 10% off when billed annually. Base plan covers 1 user; additional team members are +$11/user/mo.",
+      "cpaGrade": "B+",
+      "cpaSeatsLabel": "Up to 10 accountant logins on Plus, Premium and Select; none on Lite",
+      "payrollModelLabel": "FreshBooks Payroll powered by Gusto: $40/mo base + $6/person/mo.",
+      "plans": [
+        {
+          "id": "freshbooks-lite",
+          "name": "Lite",
+          "monthlyUsd": 23,
+          "annualMonthlyUsd": 20.7,
+          "annualExactUsd": 248.4,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": 11,
+          "includesJobCosting": false,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": false,
+          "includesFieldDispatch": false,
+          "notes": "Max 5 billable clients; NO free Accountant access or double-entry reports."
+        },
+        {
+          "id": "freshbooks-plus",
+          "name": "Plus",
+          "monthlyUsd": 43,
+          "annualMonthlyUsd": 38.7,
+          "annualExactUsd": 464.4,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": 11,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 50 billable clients + accountant access + double-entry reports."
+        },
+        {
+          "id": "freshbooks-premium",
+          "name": "Premium",
+          "monthlyUsd": 70,
+          "annualMonthlyUsd": 63,
+          "annualExactUsd": 756,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": 11,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Unlimited clients + Project Profitability (Job Costing) + AP/contractor bills + accountant access."
+        }
+      ]
+    },
+    {
+      "id": "zoho-books",
+      "name": "Zoho Books",
+      "category": "accounting",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://www.zoho.com/us/books/pricing/",
+      "hasAnnualDiscount": true,
+      "billingNote": "Up to 25% off on annual billing. Includes paid plans with shared user allowances; Free tier exists under $50k/yr revenue.",
+      "cpaGrade": "B+",
+      "cpaSeatsLabel": "Accountant login within paid user allowance",
+      "payrollModelLabel": "Zoho Payroll US Standard: $29/mo + $5/emp/mo annual ($39 + $6 monthly), single-state plan offered in all 50 states.",
+      "plans": [
+        {
+          "id": "zoho-standard",
+          "name": "Standard",
+          "monthlyUsd": 20,
+          "annualMonthlyUsd": 15,
+          "annualExactUsd": 180,
+          "includedUsers": 3,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 3 users, including accountant, auto bank feeds, 1099 e-filing."
+        },
+        {
+          "id": "zoho-professional",
+          "name": "Professional",
+          "monthlyUsd": 50,
+          "annualMonthlyUsd": 40,
+          "annualExactUsd": 480,
+          "includedUsers": 5,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 5 users, including accountant, Project Profitability, Progress Invoicing, Retainers & POs."
+        },
+        {
+          "id": "zoho-premium",
+          "name": "Premium",
+          "monthlyUsd": 70,
+          "annualMonthlyUsd": 60,
+          "annualExactUsd": 720,
+          "includedUsers": 10,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 10 users, including accountant, custom domains, vendor portal & budgets."
+        },
+        {
+          "id": "zoho-ultimate",
+          "name": "Ultimate",
+          "monthlyUsd": 275,
+          "annualMonthlyUsd": 240,
+          "annualExactUsd": 2880,
+          "includedUsers": 15,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": false,
+          "notes": "Up to 15 users, including accountant + advanced analytics (16+ seats require published user add-ons)."
+        }
+      ]
+    },
+    {
+      "id": "wave",
+      "name": "Wave Accounting",
+      "category": "accounting",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://www.waveapps.com/pricing",
+      "hasAnnualDiscount": true,
+      "billingNote": "Starter is $0 forever (manual bank imports). Pro is $19/mo monthly ($228/yr) or $190/yr billed annually.",
+      "cpaGrade": "B",
+      "cpaSeatsLabel": "Pro includes admin, editor and viewer access; Starter has restricted roles",
+      "payrollModelLabel": "Wave Payroll (full-service, all 50 states): $40/mo base + $6/active person/mo.",
+      "plans": [
+        {
+          "id": "wave-starter",
+          "name": "Starter",
+          "monthlyUsd": 0,
+          "annualMonthlyUsd": 0,
+          "annualExactUsd": 0,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": false,
+          "includesFieldDispatch": false,
+          "notes": "Owner bookkeeping access; payroll managers and Block Advisors have limited roles. Unlimited invoices/estimates, but no auto bank feeds or receipt OCR."
+        },
+        {
+          "id": "wave-pro",
+          "name": "Pro",
+          "monthlyUsd": 19,
+          "annualMonthlyUsd": 15.83,
+          "annualExactUsd": 190,
+          "includedUsers": "unlimited",
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": true,
+          "includesProgressInvoicing": false,
+          "includesFieldDispatch": false,
+          "notes": "Auto bank feeds, receipt OCR, recurring invoices & auto-reminders. Still no Job Costing."
+        }
+      ]
+    },
+    {
+      "id": "jobber",
+      "name": "Jobber",
+      "category": "field_service",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://www.getjobber.com/pricing/",
+      "hasAnnualDiscount": true,
+      "billingNote": "Up to ~25–40% off with annual prepayment. For 15 users Connect is $399/$299 and Grow $499/$399 (monthly/annual equivalent). Plus for 5/10/15 users is $499/$599/$699 monthly or $399/$449/$529 annual equivalent. At 16+ contact sales.",
+      "cpaGrade": "B+",
+      "cpaSeatsLabel": "Requires companion ledger (Xero/QBO) for full CPA books",
+      "payrollModelLabel": "No native payroll — pairs with Gusto ($49/mo + $6/emp/mo) or Xero Payroll ($36 + $6).",
+      "plans": [
+        {
+          "id": "jobber-core-1",
+          "name": "Core (1 User)",
+          "monthlyUsd": 49,
+          "annualMonthlyUsd": 29,
+          "annualExactUsd": 348,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": false,
+          "includesFieldDispatch": true,
+          "notes": "Solo only. Quoting, scheduling & invoicing; no accounting sync or Job Costing."
+        },
+        {
+          "id": "jobber-connect-1",
+          "name": "Connect (1 User)",
+          "monthlyUsd": 139,
+          "annualMonthlyUsd": 99,
+          "annualExactUsd": 1188,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "1 user. Adds automated reminders, checklists, and native Xero/QBO sync."
+        },
+        {
+          "id": "jobber-connect-5",
+          "name": "Connect (Up to 5 Users)",
+          "monthlyUsd": 199,
+          "annualMonthlyUsd": 149,
+          "annualExactUsd": 1788,
+          "includedUsers": 5,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "Up to 5 users + native Xero/QBO sync & automated workflows."
+        },
+        {
+          "id": "jobber-connect-10",
+          "name": "Connect (Up to 10 Users)",
+          "monthlyUsd": 299,
+          "annualMonthlyUsd": 229,
+          "annualExactUsd": 2748,
+          "includedUsers": 10,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": false,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "Up to 10 users + native Xero/QBO sync."
+        },
+        {
+          "id": "jobber-grow-1",
+          "name": "Grow (1 User)",
+          "monthlyUsd": 199,
+          "annualMonthlyUsd": 149,
+          "annualExactUsd": 1788,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "1 user + Job Costing, two-way SMS, quote upsells & Xero/QBO sync."
+        },
+        {
+          "id": "jobber-grow-5",
+          "name": "Grow (Up to 5 Users)",
+          "monthlyUsd": 299,
+          "annualMonthlyUsd": 229,
+          "annualExactUsd": 2748,
+          "includedUsers": 5,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "Up to 5 users + Job Costing, two-way SMS, quote upsells & Xero/QBO sync."
+        },
+        {
+          "id": "jobber-grow-10",
+          "name": "Grow (Up to 10 Users)",
+          "monthlyUsd": 399,
+          "annualMonthlyUsd": 299,
+          "annualExactUsd": 3588,
+          "includedUsers": 10,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "Up to 10 users + Job Costing, two-way SMS & Xero/QBO sync."
+        }
+      ]
+    },
+    {
+      "id": "housecall-pro",
+      "name": "Housecall Pro",
+      "category": "field_service",
+      "verifiedAt": "2026-11-25",
+      "officialPricingUrl": "https://www.housecallpro.com/pricing/",
+      "hasAnnualDiscount": true,
+      "billingNote": "Discounted annual billing available. Basic (1 user), Essentials (up to 5 users), MAX (up to 8 users, +$35/mo per extra user).",
+      "cpaGrade": "C",
+      "cpaSeatsLabel": "No native Xero sync; syncs natively with QBO on Essentials+",
+      "payrollModelLabel": "Pairs with Gusto ($49/mo + $6/emp/mo) or QuickBooks Workforce Payroll.",
+      "plans": [
+        {
+          "id": "hcp-basic",
+          "name": "Basic (1 User)",
+          "monthlyUsd": 79,
+          "annualMonthlyUsd": 59,
+          "annualExactUsd": 708,
+          "includedUsers": 1,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": false,
+          "includesFieldDispatch": true,
+          "notes": "Solo only. Dispatch, estimates, invoicing & basic job costing; no accounting sync."
+        },
+        {
+          "id": "hcp-essentials",
+          "name": "Essentials (Up to 5 Users)",
+          "monthlyUsd": 189,
+          "annualMonthlyUsd": 149,
+          "annualExactUsd": 1788,
+          "includedUsers": 5,
+          "extraUserMonthlyUsd": null,
+          "includesJobCosting": true,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "Up to 5 users + GPS tracking, flat-rate pricebook, commissions & QBO sync."
+        },
+        {
+          "id": "hcp-max",
+          "name": "MAX (Up to 8 Users)",
+          "monthlyUsd": 329,
+          "annualMonthlyUsd": 299,
+          "annualExactUsd": 3588,
+          "includedUsers": 8,
+          "extraUserMonthlyUsd": 35,
+          "includesJobCosting": true,
+          "includesCpaSeat": false,
+          "includesProgressInvoicing": true,
+          "includesFieldDispatch": true,
+          "notes": "Up to 8 users (+$35/mo per extra user) + recurring service plans, proposals & open API."
+        }
+      ]
+    }
+  ]
+}
