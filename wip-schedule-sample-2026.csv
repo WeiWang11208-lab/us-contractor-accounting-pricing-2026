@@ -1,0 +1,5 @@
+job_id,scope,contract_usd,est_total_cost_usd,cost_to_date_usd,pct_complete,earned_revenue_usd,billed_to_date_usd,over_under_usd,wip_account
+J-2026-101,Retail Tenant Build-Out,240000,180000,126000,0.700,168000,180000,12000,2150 BIE (Overbilled)
+J-2026-104,Commercial HVAC Retrofit,150000,112500,67500,0.600,90000,75000,-15000,1220 CIE (Underbilled)
+J-2026-108,Medical Office Electrical,95000,70000,35000,0.500,47500,47500,0,Balanced
+J-2026-112,Custom Kitchen & Bath Remodel,85000,61200,24480,0.400,34000,42500,8500,2150 BIE (Overbilled)

@@ -1,0 +1,21 @@
+code,account_name,statement_type,contractor_category,bookkeeping_rule,verified_date
+1010,Operating Checking — General,Current Asset,Cash,Primary trade receivables supplier checks and payroll funding,2026-11-28
+1200,Accounts Receivable — Progress Draws,Current Asset,Receivables,Open customer invoices and approved AIA G702 draws net of retainage,2026-11-28
+1210,Retainage Receivable (5%-10%),Current Asset,Retainage,Contract holdbacks withheld by GCs or owners until substantial completion,2026-11-28
+1220,Costs & Estimated Earnings in Excess of Billings (CIE / Underbillings),Current Asset,WIP,Month-end WIP asset when earned revenue exceeds progress billings,2026-11-28
+1500,Service Trucks Trailers & Heavy Equipment,Fixed Asset,Fleet,Depreciable fleet and machinery tracked separately from job rentals,2026-11-28
+2000,Accounts Payable — Trade Suppliers & Subs,Current Liability,Payables,Supply-house terms Net 30 and unpaid 1099 subcontractor draws,2026-11-28
+2110,Retainage Payable (Subcontractors),Current Liability,Retainage,Holdbacks retained from 1099 trade subs until punchlist sign-off,2026-11-28
+2150,Billings in Excess of Costs & Estimated Earnings (BIE / Overbillings),Current Liability,WIP,Month-end WIP liability when client deposits or draws exceed earned revenue,2026-11-28
+2200,Payroll Liabilities (FICA FUTA SUTA Workers Comp),Current Liability,Payroll,Accrued payroll taxes and quarterly workers comp audit reserves,2026-11-28
+4010,Contract Revenue — Fixed-Price / AIA Draws,Revenue,Contract Revenue,Base contract progress billings and approved fixed change orders,2026-11-28
+4020,Time & Materials (T&M) & Service Call Revenue,Revenue,Service Revenue,Hourly service calls emergency repairs and T&M extra work,2026-11-28
+4090,WIP Revenue Adjustment (Over/Underbillings),Revenue,WIP,Monthly percentage-of-completion accrual tie-out to 1220 / 2150,2026-11-28
+5010,COGS — Direct Job Materials & Supply House,Direct COGS,Materials,Lumber copper wire fixtures condensers tied to a specific Job ID,2026-11-28
+5020,COGS — Subcontractor Labor (1099-NEC),Direct COGS,Subcontractors,Licensed trade subs and haulers flagged for year-end IRS Form 1099-NEC,2026-11-28
+5030,COGS — Direct Field Labor (Gross W-2 Wages),Direct COGS,Field Labor,Billable field crew hours tracked by project and cost code,2026-11-28
+5035,COGS — Field Labor Burden (Payroll Tax & WC),Direct COGS,Labor Burden,Employer FICA 7.65% FUTA SUTA workers comp and field benefits (22-35%),2026-11-28
+5040,COGS — Permits Dumpsters & Job Equipment Rentals,Direct COGS,Job Direct,Project-specific municipal permits roll-offs lifts and trenchers,2026-11-28
+6100,Overhead — Office Salaries Estimating & Admin,Overhead (OpEx),Admin,Non-billable owner draw admin payroll bookkeeper and estimator wages,2026-11-28
+6200,Overhead — Fleet Fuel Insurance & Vehicle Maintenance,Overhead (OpEx),Fleet OpEx,General fleet expenses not billed directly to a single contract,2026-11-28
+6300,Overhead — General Liability Bond & Software Stack,Overhead (OpEx),Software & Insurance,GL umbrella policies surety bond fees accounting and FSM subscriptions,2026-11-28

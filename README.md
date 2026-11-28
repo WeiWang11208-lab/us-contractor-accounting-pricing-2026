@@ -36,6 +36,8 @@ Audited **US regular list-price dataset** (`JSON` & `CSV`) comparing **7 platfor
 
 - [`pricing-2026-11.csv`](./pricing-2026-11.csv) — Flat 26-plan CSV across all 7 platforms with verified date & official pricing URLs
 - [`pricing-2026-11.json`](./pricing-2026-11.json) — Structured JSON including embedded/standalone payroll schedules
+- [`contractor-chart-of-accounts-2026.csv`](./contractor-chart-of-accounts-2026.csv) — 20-account CPA-ready US Construction Chart of Accounts (`1210` Retainage, `1220` CIE Underbillings, `2150` BIE Overbillings, `5010–5040` Direct Trade COGS) importable into Xero, Zoho Books, or QBO
+- [`wip-schedule-sample-2026.csv`](./wip-schedule-sample-2026.csv) — Worked 4-job Work-in-Progress (WIP) Overbilling / Underbilling schedule (`$570,000` backlog)
 - [`scripts/verify-pricing.mjs`](./scripts/verify-pricing.mjs) — Zero-dependency parity and URL audit check:
 
 ```bash
@@ -48,7 +50,10 @@ node scripts/verify-pricing.mjs
 
 ## Interactive Switch Cost Calculator
 
-Run these audited 2026 rates interactively across 6 trades, 4 crew sizes, monthly vs annual billing, W-2 payroll, and CPA access gates at **[TradeCostHQ](https://tradecosthq.com/)** (100% browser-local, zero login required), or explore trade-specific breakdowns for [Plumbers](https://tradecosthq.com/quickbooks-alternative-for-plumbers/), [HVAC](https://tradecosthq.com/quickbooks-alternative-for-hvac/), [Electricians](https://tradecosthq.com/quickbooks-alternative-for-electricians/), and [General Contractors](https://tradecosthq.com/quickbooks-alternative-for-general-contractors/).
+Run these audited 2026 rates interactively across 6 trades, 4 crew sizes, monthly vs annual billing, W-2 payroll, and CPA access gates at **[TradeCostHQ](https://tradecosthq.com/)** (100% browser-local, zero login required):
+
+- **By Trade & Exit Path**: [Plumbers](https://tradecosthq.com/quickbooks-alternative-for-plumbers/) · [HVAC](https://tradecosthq.com/quickbooks-alternative-for-hvac/) · [Electricians](https://tradecosthq.com/quickbooks-alternative-for-electricians/) · [General Contractors](https://tradecosthq.com/quickbooks-alternative-for-general-contractors/) · [QuickBooks Desktop Exit](https://tradecosthq.com/quickbooks-desktop-alternative-for-contractors/) · [QuickBooks Payroll Alternatives](https://tradecosthq.com/quickbooks-payroll-alternative-for-contractors/)
+- **CPA & Construction Accounting Guides**: [Construction Chart of Accounts & WIP Report](https://tradecosthq.com/guides/construction-chart-of-accounts-and-wip-report/) · [AIA G702/G703 Progress Billing Guide](https://tradecosthq.com/guides/aia-billing-and-progress-invoicing-for-contractors/) · [T&M & Change Order Templates](https://tradecosthq.com/guides/time-and-materials-and-change-order-templates/) · [Construction Job Costing Guide](https://tradecosthq.com/guides/contractor-job-costing-software-guide/) · [Free & Cheap QBO Alternatives](https://tradecosthq.com/compare/free-and-cheap-quickbooks-alternatives-for-contractors/)
 
 ---
 
